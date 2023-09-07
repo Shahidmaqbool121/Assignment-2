@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        #format{
+         width: 600px;
+         height: 280px;
+         padding: 2px;
+         border: 2px solid black ;
+        margin-left: 5px;
+      }
+      #para{
+        color: rgb(96, 239, 96);
+        
+      }
+       #nav{
+        width: 600px;
+         height: 150px;
+         padding: 2px;
+         border: 2px solid black ;
+        margin-left: 5px;
+      
+      }
+      #TOC{
+        width: 330px;
+        height: 510px;
+        padding: 2px;
+        border: 2px solid black;
+        color: blueviolet
+      }
+      #heading{
+        color: black;
+        font-size: 30px;
+      }
+      #tech{
+        font-size: 25px;
+
+      }
+      /* dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+} */
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        height: 100%;
+        table-layout: fixed;
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+      #schedule{
+        width: auto;
+         height: auto;
+         padding: 5px;
+         border: 2px solid black ;
+        /* margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: auto; */
+      }
+    </style>
+</head>
+<body>
+    <h3>Q1:- Build a simple webpage that displays text as shown in the below image, Using Formatting Tags</h3>
+    <h4>Ans:- HTML Formatting Elements</h4>
+     <h5>Formatting elements were designed to display special types of text:</h5>
+     <div id="format">
+     <!-- The HTML <b> element defines bold text, without any extra importance. -->
+        <p><b>This text will be bold</b></p>
+
+        <!-- The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic. -->
+
+            <!-- Tip: The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc. -->
+
+
+                <p><i>This text will be italic</i> </p> 
+                
+                
+                <!-- The <u> tag in HTML stands for underline, and it’s used to underline the text enclosed within the <u> tag. This tag is generally used to underline misspelled words. This tag requires a starting as well as ending tag.       -->
+
+                  <p> <u> This Text will be Underlined</u></p>
+
+                    <!-- The HTML <mark> element defines text that should be marked or highlighted:     -->
+                      <p>  <mark>This text will be marked</mark> </p>
+
+                      <!-- The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]: -->
+                        <p>This is normal text<sup>This will be super scripted</sup>This is normal again</p>
+
+                        <!-- The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O: -->
+                            <p>This is normal text<sub>this will be subscripted</sub></p>
+
+                            <!-- The HTML <small> element defines smaller text: -->
+                            <p>Normal Text <small>Small Text</small></p>
+
+                            <!-- The HTML <del> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text: -->
+                             <p><del>This text will be deleted</del></p> 
+                             
+
+                            <h3>Q2:- Build a simple webpage that helps users navigate different webdevelopment- related websites. Note on clicking the hyperlink the webpages should open in a new tab </h3>  
+                            
+                            <h4>Ans:-   The web development and desigining related websites are also mentioned in question no. 3</h4>
+                             <nav id="nav">
+                            <p><b>Navigate these websites </b></p>
+                            <p><a target="_blank" href="https://pwskills.com/courses?">Take Me to PWSkills </a></p>
+                            <p><a target="_blank" href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></p>
+
+                            <p><a target="_blank" href="https://lab.pwskills.com">PW Skills Lab</a></p>
+                            
+                            </nav>
+                            <h4>Q3:- Build a simple blog web page with 3 pages home, webdevelopment,and web design.Each page must 
+                                contain hyperlinks to other pages in the top, a  heading of the page topic and a paragraph of information. 
+                                For the home page you can add some information about yourself</h4>
+                                <h4>Ans:-</h4>
+                              
+                            <nav>
+                                <ul>
+                                  <li><a target="_blank" href="https://www.linkedin.com/in/shahid-lone44">Home</a>
+                                <p id="firstpara"> 
+                                    “My name is Shahid Lone and I hail from Pazalpora Bijbehara. I come from a Muslim family and I have completed my B.Tech in Dr. Babasaheb Ambedhkar Technological University Lonere in 2022". 
+                                    <br>I am a very punctual and determined student. My teachers appreciate my work and motivate me to be better every day. I am an honest student and I always try to be consistent in my studies. As a child, I love going out and spending time with my family. When I grow up I want to explore and visit the whole world”.
+                                    <br>
+                                    The course of Life is full of ups and downs. If today is not good for us, then we must keep hope that everything will be good very soon. We must never discourage ourselves during tough times. Therefore, In life always try to appreciate your living. Find your purpose and strive to be more helpful each day”.</p></li>
+                                  <li><a target="_blank" href="https://www.nobledesktop.com/">Web Development</a><p id="secondpara">
+                                    Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.
+                                    
+                                  </p></li>
+                                  <li><a target="_blank" href="https://webdesigner.withgoogle.com/">Web Design</a><p id="thirdpara">Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate.</p></li>
+
+                                  <h4>Q4:- Create an ordered list of HTML tags. Each list item must include the tag name and some information about the tag</h4>
+                                  <h3>Ans:- The HTML <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.<br>An ordered list starts with the ol tag. Each list item starts with the li tag.
+
+                                    The list items will be marked with numbers by default:</h3>
+                                    <ol>
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <li>Milk</li>
+                                      </ol>
+                                    <p>type="1"	The list items will be numbered with numbers (default) <br><b>Numbers:</b></p>
+                                    <ol type="1">
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <li>Milk</li>
+                                      </ol>
+                                      <p>type="A"	The list items will be numbered with uppercase letters <br> <b>Uppercase Leeters</b>
+                                      </p>
+                                      <ol type="A">
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <li>Milk</li>
+                                      </ol>
+                                      <p>type="a"	The list items will be numbered with lowercase letters <br><b>Lowercase Letters</b></p>
+                                      <ol type="a">
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <li>Milk</li>
+                                      </ol>
+                                      <p>type="I"	The list items will be numbered with uppercase roman numbers <br><b>Uppercase Roman Numbers:</b></p>
+                                      <ol type="I">
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <li>Milk</li>
+                                      </ol>
+                                      <p>type="i"	The list items will be numbered with lowercase roman numbers <br><b>Lowercase Roman Numbers:</b></p>
+                                      <ol type="i">
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <li>Milk</li>
+                                      </ol>
+                                      <h4>Control List Counting</h4>
+                                      <p>By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute: <br> <b>Example:</b></p>
+                                      <ol start="50">
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <li>Milk</li>
+                                      </ol>
+                                      
+                                  <h4>Nested HTML Lists</h4>
+                                  <p>Lists can be nested (list inside list): <br><b>Example:</b></p>
+                                  <ol>
+                                    <li>Coffee</li>
+                                    <li>Tea
+                                      <ol>
+                                        <li>Black tea</li>
+                                        <li>Green tea</li>
+                                      </ol>
+                                    </li>
+                                    <li>Milk</li>
+                                  </ol>
+                                 
+                                </ul>
+                                </nav>
+
+                                <h3>Q5:- Create a description list of full stack web development tech stack, using the dl tag. Each term should be 
+                                  a tech stack name and each description should be a brief explanation of what the tech stack is used for?</h3>
+
+                                  <h4>Ans:- The dl tag defines a description list.
+
+                                    The dl tag is used in conjunction with dt (defines terms/names) and dd (describes each term/name).</h4>
+                                
+                                    <p>A dl element is displayed like this:</p>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+                                <h3>Q6:- Create an ordered list of the full stack web development tech stack HTML, CSS and JS.For each tech stack ,create a table thjat lists the tech stack name, its primary use cases , and some key features or benefits.</h3>
+                                <h4>Ans:- </h4>
+                                <p id="tech">1.<b>HTML</b></p>
+                                <table>
+                                  <tr>
+                                    <th>Primary Use Cases</th>
+                                    <th>Key Features/Benefits</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Building the structure of web pages</td>
+                                    <td><ul>
+                                      <li>Simple and Easy to Learn</li>
+                                      <li>Compatible withj all web pages</li>
+                                      <li>Allows for Semantic markup</li>
+                                    </ul></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Navigating the internet</td>
+                                    <td><ul><li>HTML’s anchor tags allow us to link pages</li>
+                                    <li>You can also use hyperlinks to link to a specific section of a webpage.</li>
+                                    <li><a href="https://www.google.com">Google</a> It will take us to Google</li></ul></td>
+                                  </tr>
+                                </table>
+                                <p id="tech">2.<b>CSS</b></p>
+                                <table>
+                                  <tr>
+                                    <th>Primary Use Cases</th>
+                                    <th>Key Features/Benefits</th>
+                                  </tr>
+                                  <tr>
+                                    <td>We can add unique styles to our old documents of HTML.</td>
+                                    <td><ul>
+                                      <li><b>Opportunity in Web designing:</b> If anyone wants to begin a career in web designing professionally, it is essential to have knowledge of CSS and HTML.</li>
+                                      <li>Fast Page Loading</li>
+                                      <li>Easy Maintenance</li>
+                                    </ul></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Web Control</td>
+                                    <td><ul><li>CSS has controlling power on the documents of HTML, so it is easy to learn. It is integrated with the HTML and the XHTML markup languages.</li>
+                                    <li>Superior HTML Styles</li>
+                                    <li>Compatibility</li></ul></td>
+                                  </tr>
+                                </table>
+
+                                <p id="tech">3.<b>JAVASCRIPT</b></p>
+                                <table>
+                                  <tr>
+                                  <th>Primary Use Cases</th>
+                                    <th>Key Features/Benefits</th>
+                                </tr>
+                                <tr><td>Web Applications</td>
+                                <td><ul><li>Object-Centered Script Language</li>
+                                <li>Client Edge Technology</li>
+                                <li>Validation of User’s Input</li></ul></td>
+                              </tr>
+                                <tr><td>Web Development</td>
+                                <td><ul><li>Else and IF Statement</li>
+                                <li>Interpreter Centered</li>
+                                <li>Ability to Perform In Build Function</li>
+                              </ul></td>
+                            </tr>
+                                <tr><td>Web Servers</td>
+                                <td><ul><li> Case Sensitive Format</li>
+                                <li>Light Weight and delicate</li>
+                                <li>Statements Looping</li></ul></td>
+                              </tr>
+                              </table>
+
+                                <h3>Q7:- Build a complex nested list structure representing a multi-level table of contents. Use unordered lists (ul) and list items (li) with inline-block styling to create a structured layout. Apply formatting tags to enhance the presentation of list items.</h3>
+                                  <h4>Ans:- </h4>
+                                  <div id="TOC"><h3 id="heading">Table Of Contents</h3>
+                                  <ul>
+                                    <li><u>Part 1: Introduction</u></li>
+                                    <li><u>Part 2: Getting Started</u>
+                                      <ul>
+                                        <li><u>2.1 Installing the software</u></li>
+                                        <li><u>2.2 Creating the new project</u>
+                                        <ul style="list-style-type: square">
+                                          <li><u>2.2.1 Project Tempelate</u></li>
+                                          <li><u>2.2.2 Customizing Setting</u></li>
+                                        </ul>
+                                          <li><u>2.3 Exploring the interface</u>
+                                          <ul style="list-style-type: square">
+                                            <li><u> 2.3.1 Toolbar features</u></li>
+                                            <li>
+                                              <u>
+                                                2.3.2 Panel Layout
+                                              </u>
+                                              <ul style="list-style-type: square">
+                                              <li>
+                                                <u>
+                                                  2.3.2.1 Docking Panels
+                                                </u>
+                                              </li>
+                                              <li><u>2.3.2.2 Tabbed Interface</u></li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                          </li>
+                                          
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    
+                                    <li><u>Part 3: Getting Started</u>
+                                      <ul>
+                                        <li><u>3.1 Working With Plugins</u>
+                                        <ul style="list-style-type: square;">
+                                          <li><u>3.1.1 Installing Plugins</u></li>
+                                          <li><u>3.1.2 Plugin Configuration</u></li>
+                                        </ul>
+
+                                        </li>
+                                        <li><u>3.2 Customizing the UI</u>
+                                          <ul style="list-style-type: square;">
+                                            <li><u>3.2.1 Changing Themes</u></li>
+                                            <li><u>3.2.2 Configuring Shortcuts</u></li>
+                                          </ul>
+                                        </li>
+                                        <li><u>3.3 Customizing the UI</u>
+                                          <ul style="list-style-type: square;">
+                                            <li><u>3.3.1 Caching strategies</u></li>
+                                            <li><u>3.3.2 Resource Minification</u></li>
+                                          </ul>
+                                        
+                                
+                                        
+                                      </li>
+                                  </ul>
+                                  <li><u>Part 4: Conclusion</u>
+                                  </li>
+                                  </ul>
+                                  </div>
+                                  <h3>Create a table to display a conference schedule. Each row corresponds to a time slot, and each column
+                                    corresponds to a room. Some time slots might have multiple sessions running simultaneously in different
+                                    rooms. Utilize rowspan and colspan attributes as necessary to accommodate this complex schedule.
+                                    (use table attribute “cellpadding”. to give extra padding in each table cell ).</h3>
+                                    <h4>Ans:-</h4>
+                                    <div id="schedule">
+                                      <p id="tech"><b> Confrence Schedule </b></p>
+                                      <table>
+                                        <tr><th>Time</th>
+                                        <th width="32%"> Room 1 </th>
+                                        <th> Room 2 </th>
+                                        <th> Room 3 </th>
+                                        <th> Room 4 </th></tr>
+                                        <tr>
+                                          <td rowspan="3"> 9:00 AM - 10:00AM </td>
+                                          <td rowspan="2"> Keynote </td>
+                                          <td> Session A </td>
+                                          <td> Session B </td>
+                                          <td rowspan="3"> Session C </td>
+                                        </tr>
+                                        <tr><td> Session D </td>
+                                        <td> Session E </td>
+                                      </tr>
+                                        <tr>
+                                          <td> 10:30 AM - 11:30 AM </td>
+                                          <td colspan="2"> Session F </td>
+                                        </tr>
+                                        <tr>
+                                          <td> 12:00 PM - 1:00 PM </td>
+                                          <td colspan="4"> Lunch Break </td>
+                                        </tr>
+                                        <tr>
+                                          <td rowspan="2"> 1:00 PM - 2:00 PM </td>
+                                          <td> Session G </td>
+                                          <td rowspan="2"> Session H </td>
+                                          <td> Session I </td>
+                                          <td> Session J </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Session K</td>
+                                          <td>Session L</td>
+                                          <td>Session M</td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                    <hr>
+
+
+                        
+
+</body>
+</html>
